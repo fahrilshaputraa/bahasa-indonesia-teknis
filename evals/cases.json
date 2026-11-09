@@ -1,0 +1,53 @@
+[
+  {
+    "id": "uji-langkah-kurung",
+    "query": "Rapikan langkah dokumen uji ini: 'Kirim langsung ke alamat API berikut (dikerjakan tim teknis, perlu alat khusus): POST /api/orders/export'",
+    "expected_behavior": [
+      "Langkah menyebut metode dan alamat persis: POST /api/orders/export",
+      "Keterangan tim teknis dan alat khusus dipindah ke prasyarat, tidak berada di dalam kurung pada langkah",
+      "Alamat API tidak berubah"
+    ]
+  },
+  {
+    "id": "uji-judul-abstrak",
+    "query": "Perbaiki judul butir uji: 'Halaman Admin: Tanpa Akses Ditolak dan Identitas Tidak Bisa Dipalsukan'",
+    "expected_behavior": [
+      "Judul tidak memuat 'dipalsukan' atau 'ditiru'",
+      "Judul menyebut kejadian yang bisa dilihat penguji",
+      "Judul tidak lebih dari sekitar 90 karakter dan memuat satu gagasan utama"
+    ]
+  },
+  {
+    "id": "uji-hasil-subjektif",
+    "query": "Perbaiki hasil yang diharapkan: 'Tampilan sesuai dan benar'. Data: halaman Pesanan punya tab Pesanan dengan daftar baris dan kolom Total.",
+    "expected_behavior": [
+      "Hasil menyebut pembanding yang bisa diperiksa, bukan 'sesuai' atau 'benar' saja",
+      "Hanya memakai data yang diberikan pengguna; tidak mengarang angka"
+    ]
+  },
+  {
+    "id": "proposal-klaim-umum",
+    "query": "Rapikan kalimat proposal: 'Kami berpengalaman dan memberikan layanan terbaik dengan komunikasi yang intensif.' Kami mengirim laporan tiap Jumat.",
+    "expected_behavior": [
+      "Klaim umum diganti pernyataan yang bisa diperiksa dari data pengguna (laporan tiap Jumat)",
+      "Tidak menambah angka, nama klien, atau pengalaman yang tidak diberikan pengguna",
+      "Menandai [PERLU DATA: …] bila bukti lain dibutuhkan"
+    ]
+  },
+  {
+    "id": "istilah-card",
+    "query": "Rapikan: 'Klik kartu Penjualan di dashboard, lalu buka tabulasi Detail.' Aplikasi menampilkan elemen berlabel 'card' dan 'tab'.",
+    "expected_behavior": [
+      "Memakai 'card' dan 'tab', bukan 'kartu' dan 'tabulasi'",
+      "Nama label 'Penjualan' dan 'Detail' tidak berubah"
+    ]
+  },
+  {
+    "id": "pertahankan-kutipan",
+    "query": "Rapikan laporan ini tanpa mengubah kutipan: Server menjawab \"Akses ditolak untuk pengguna ini\" (403). Kami melakukan pengecekan ulang.",
+    "expected_behavior": [
+      "Kutipan pesan sistem dan kode 403 tidak berubah",
+      "'melakukan pengecekan' menjadi 'mengecek' atau bentuk setara"
+    ]
+  }
+]
